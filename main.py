@@ -9,7 +9,7 @@ is_off = False
 
 
 def make_drink():
-    # menu.get_items()
+    # Get menu items
     drink = menu.find_drink(choice)
     is_ingredients_enough = coffeemaker.is_resource_sufficient(drink)
     is_payment_successful = money.make_payment(drink.cost)
@@ -25,7 +25,7 @@ while not is_off:
     elif choice == "espresso":
         make_drink()
     elif choice == "latte":
-        # print("Make latte") 
+        # print("Make latte")
         make_drink()
     elif choice == "cappuccino":
         #  print("Make cappuccino")
